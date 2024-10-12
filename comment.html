@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Комментарии</title>
+    <!-- Подключение CSS-файла -->
+    <link rel="stylesheet" href="comment.css">
+    <link type="image/x-icon" href="bg_header.jpg" rel="shortcut icon">
+    <link type="Image/x-icon" href="bg_header.jpg" rel="icon">
+    <style>
+      .links-list li {
+        text-decoration: none;
+      }
+
+      .cont {
+        width: 85%;
+        height: 30px;
+      }
+
+      .links-list {
+        display: flex;
+        justify-content: space-around;
+        padding: 20px 0px;
+        margin-left: 180px;
+        padding-left: 0;
+        padding-right: 0;
+      }
+
+      .nav-link-a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 700;
+      }
+    </style>
+</head>
+<body>
+
+    <div class="cont">
+      <nav class="main-nav">
+        <ul class="links-list">
+          <li><a href="/" class="nav-link-a">На головну</a></li>
+          <li><a href="vivchik.html" class="nav-link-a">Вівчік</a></li>
+          <li><a href="vasya.html" class="nav-link-a">Вася штатів</a></li>
+          <li><a href="romchik.html" class="nav-link-a">Ромчік псіх</a></li>
+          <li><a href="doter.html" class="nav-link-a">Дотєр</a></li>
+          <li><a href="sertificate.html" class="nav-link-a">Сертифікат дотєра</a></li>
+          <li><a style="color: rgb(192, 42, 42);" href="comment.html" class="nav-link-a">ЗАЛИШИТИ КОМЕНТАР | КОМЕНТИ</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Основной контент -->
+    <div class="container">
+        <h2 id="comments">Залишити відгук / коментар</h2>
+        <form id="commentForm">
+            <label for="username">Ім'я:</label><br>
+            <input type="text" id="username" placeholder="Введіть ім'я" required><br><br>
+
+            <label for="comment">Коментарій:</label><br>
+            <textarea id="comment" placeholder="Введіть ваш коментар" required></textarea><br><br>
+
+            <button type="submit">Відправити</button>
+        </form>
+
+        <h2 style="color: #fff;">Коментарі:</h2>
+        <div id="commentSection"></div>
+    </div>
+
+    <script src="comments.js"></script>
+</body>
+</html>
